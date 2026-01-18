@@ -45,7 +45,15 @@ const Dashboard = () => {
       </div>
 
       {/* Quick Actions */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <ActionCard
+          title="Floating Widget"
+          description="Launch compact overlay for Zoom/Meet calls"
+          icon={<Headphones size={32} className="text-blue-600" />}
+          buttonText="Open Widget"
+          buttonLink="/widget"
+          gradient="from-blue-50 to-blue-100"
+        />
         <ActionCard
           title="Start Training Session"
           description="Practice with Dr. Doom AI to improve your compliance skills"
@@ -55,8 +63,8 @@ const Dashboard = () => {
           gradient="from-purple-50 to-purple-100"
         />
         <ActionCard
-          title="Start Live Copilot"
-          description="Get real-time guidance during your sales calls"
+          title="Full Copilot Mode"
+          description="Full-screen copilot with detailed analytics"
           icon={<Headphones size={32} className="text-green-600" />}
           buttonText="Go Live"
           buttonLink="/copilot"
