@@ -16,8 +16,12 @@ class Settings(BaseSettings):
     ELEVENLABS_API_KEY: str = ""
     LIVEKIT_API_KEY: str = ""
     LIVEKIT_API_SECRET: str = ""
-    LIVEKIT_URL: str = "wss://localhost:7880"
+    LIVEKIT_URL: str = "ws://localhost:7880"
     TOKEN_COMPANY_API_KEY: str = ""
+
+    # LiveKit Agents API Keys
+    DEEPGRAM_API_KEY: str = ""
+    GOOGLE_API_KEY: str = ""  # For Gemini LLM
     
     # Database
     DATABASE_URL: str = "postgresql://localhost:5432/veritas"
