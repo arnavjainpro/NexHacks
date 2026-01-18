@@ -11,7 +11,7 @@ import uvicorn
 from loguru import logger
 import sys
 
-from api import training_router, copilot_router, analytics_router, auth_router
+from api import training_router, copilot_router, analytics_router, auth_router, token_compression_router
 from services.websocket_manager import websocket_manager
 from services.compliance_engine import ComplianceEngine
 from config import settings
@@ -91,6 +91,7 @@ app.include_router(auth_router, prefix="/api/auth", tags=["Authentication"])
 app.include_router(training_router, prefix="/api/training", tags=["Training"])
 app.include_router(copilot_router, prefix="/api/copilot", tags=["Copilot"])
 app.include_router(analytics_router, prefix="/api/analytics", tags=["Analytics"])
+app.include_router(token_compression_router, prefix="/api/token-compression", tags=["TokenCompression"])
 
 
 # WebSocket endpoint for real-time communication

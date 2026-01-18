@@ -8,6 +8,7 @@ from .ai_doctor import AIDoctorService
 from .training_service import TrainingService
 from .copilot_service import CopilotService
 from .analytics_service import AnalyticsService
+from .token_compression import token_compression_service
 
 __all__ = [
     "ComplianceEngine",
@@ -16,4 +17,5 @@ __all__ = [
     "TrainingService",
     "CopilotService",
     "AnalyticsService",
+    "token_compression_service",
 ]

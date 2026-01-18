@@ -18,6 +18,7 @@ class Settings(BaseSettings):
     LIVEKIT_API_SECRET: str = ""
     LIVEKIT_URL: str = "wss://localhost:7880"
     TOKEN_COMPANY_API_KEY: str = ""
+    TOKEN_COMPANY_BASE_URL: str = "https://api.thetokencompany.com/v1"
     
     # Database
     DATABASE_URL: str = "postgresql://localhost:5432/veritas"
